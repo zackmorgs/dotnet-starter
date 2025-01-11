@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "npm-run-all --parallel sass:watch webpack:watch dotnet:watch",
+    "webpack:watch": "webpack watch",
+    "dotnet:watch": "dotnet watch --project ./src/Client/Client.csproj",
+    "sass:watch" : "sass --watch ./src/Client/wwwroot/js/styles/scss/:./src/Client/wwwroot/js/styles/css/"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +16,7 @@
     "autoprefixer": "^10.4.20",
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
     "postcss-loader": "^8.1.1",
     "sass": "^1.83.1",
     "sass-loader": "^16.0.4",
@@ -23,6 +27,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "npm-run-all": "^4.1.5"
   }
 }
