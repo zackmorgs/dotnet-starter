@@ -6,7 +6,7 @@
     "watch": "npm-run-all --parallel sass:watch webpack:watch dotnet:watch",
     "webpack:watch": "webpack watch",
     "dotnet:watch": "dotnet watch --project ./src/Client/Client.csproj",
-    "sass:watch" : "sass --watch ./src/Client/wwwroot/js/styles/scss/:./src/Client/wwwroot/js/styles/css/"
+    "sass:watch" : "sass --watch ./src/Client/wwwroot/styles/scss/:./src/Client/wwwroot/styles/css/"
   },
   "keywords": [],
   "author": "",

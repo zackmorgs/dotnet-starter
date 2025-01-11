@@ -1,4 +1,7 @@
 node_modules
+
+/src/Client/wwwroot/styles/css/styles.css
+
 *.swp
 *.*~
 project.lock.json
