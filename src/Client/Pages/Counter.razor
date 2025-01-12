@@ -1,14 +1,25 @@
 ﻿@page "/counter"
 
 <PageTitle>Counter</PageTitle>
+
 <div class="container-fluid">
+    <div class="bg-light text-dark py-5">
+        <div class="container text-center">
+            <h1 class="display-1">Counter</h1>
+        </div>
+    </div>
+</div>
 
-    <h1>Counter</h1>
+<div class="container-fluid">
+    <div class="text-center mt-3">
 
-    <p role="status">Current count: @currentCount</p>
 
-    <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
+        <p role="status">Current count: <b>@currentCount</b></p>
+
+        <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+    </div>
 </div>
 @code {
     private int currentCount = 0;
