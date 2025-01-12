@@ -13688,5 +13688,8 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
+#app {
+  position: relative;
+}
 
 /*# sourceMappingURL=styles.css.map */
