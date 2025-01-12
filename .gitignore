@@ -1,6 +1,7 @@
 node_modules
 
-/src/Client/wwwroot/styles/css/styles.css
+src/Client/wwwroot/styles/css/styles.css
+src/Client/wwwroot/js/dist/main.js
 
 *.swp
 *.*~
