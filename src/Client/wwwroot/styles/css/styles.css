@@ -13688,5 +13688,8 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
+.page {
+  margin-top: 60px;
+}
 
 /*# sourceMappingURL=styles.css.map */
